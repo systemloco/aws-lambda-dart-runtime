@@ -1,3 +1,8 @@
+# 2.0.0
+
+- Updated dependencies to latest versions
+- Added Cloudfront events with tests
+
 # Fork
 
 ## 1.1.0
