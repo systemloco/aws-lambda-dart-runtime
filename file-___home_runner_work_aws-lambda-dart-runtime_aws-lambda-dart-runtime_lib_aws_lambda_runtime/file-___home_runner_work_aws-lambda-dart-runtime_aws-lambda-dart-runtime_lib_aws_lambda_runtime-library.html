@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=no">
+  <meta name="description" content="aws_lambda_runtime library API docs, for the Dart programming language.">
+  <title>aws_lambda_runtime library - Dart API</title>
+
+
+  
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet">
+  
+  <link rel="stylesheet" href="../static-assets/github.css?v1">
+  <link rel="stylesheet" href="../static-assets/styles.css?v1">
+  <link rel="icon" href="../static-assets/favicon.png?v1">
+  
+</head>
+
+<body data-base-href="../" data-using-base-href="false" class="light-theme">
+<div id="overlay-under-drawer"></div>
+<header id="title">
+  <span id="sidenav-left-toggle" class="material-symbols-outlined" role="button" tabindex="0">menu</span>
+  <ol class="breadcrumbs gt-separated dark hidden-xs">
+    <li><a href="../index.html">aws_lambda_runtime</a></li>
+    <li class="self-crumb">aws_lambda_runtime.dart</li>
+  </ol>
+  <div class="self-name">aws_lambda_runtime</div>
+  <form class="search navbar-right" role="search">
+    <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+  <div class="toggle" id="theme-button" title="Toggle brightness">
+    <label for="theme">
+      <input type="checkbox" id="theme" value="light-theme">
+      <span id="dark-theme-button" class="material-symbols-outlined">
+        dark_mode
+      </span>
+      <span id="light-theme-button" class="material-symbols-outlined">
+        light_mode
+      </span>
+    </label>
+  </div>
+</header>
+<main>
+<div
+    id="dartdoc-main-content"
+    class="main-content"
+    data-above-sidebar=""
+    data-below-sidebar="file-___home_runner_work_aws-lambda-dart-runtime_aws-lambda-dart-runtime_lib_aws_lambda_runtime&#47;file-___home_runner_work_aws-lambda-dart-runtime_aws-lambda-dart-runtime_lib_aws_lambda_runtime-library-sidebar.html">
+  
+    <div>
+      
+
+      <h1>
+        <span class="kind-library">aws_lambda_runtime</span>
+        library 
+ 
+
+      </h1>
+    </div>
+
+    
+
+
+    <section class="summary offset-anchor" id="classes">
+      <h2>Classes</h2>
+      <dl>
+          <dt id="AwsALBEvent">
+  <span class="name "><a href="../file-___home_runner_work_aws-lambda-dart-runtime_aws-lambda-dart-runtime_lib_events_alb_event/AwsALBEvent-class.html">AwsALBEvent</a></span> 
+
+</dt>
+<dd>
+  Event send by an Application Load Balancer to the
+invocation to the Lambda.
+</dd>
+
+          <dt id="AwsALBEventContext">
+  <span class="name "><a href="../file-___home_runner_work_aws-lambda-dart-runtime_aws-lambda-dart-runtime_lib_events_alb_event/AwsALBEventContext-class.html">AwsALBEventContext</a></span> 
+
+</dt>
+<dd>
+  AWS ALB Event Request Context ...
+</dd>
+
+          <dt id="AwsALBResponse">
+  <span class="name "><a href="../file-___home_runner_work_aws-lambda-dart-runtime_aws-lambda-dart-runtime_lib_events_alb_event/AwsALBResponse-class.html">AwsALBResponse</a></span> 
+
+</dt>
+<dd>
+  Response for a request from an Application Load Balancer.
+It has to have a <a href="../file-___home_runner_work_aws-lambda-dart-runtime_aws-lambda-dart-runtime_lib_events_alb_event/AwsALBResponse/statusCode.html">statusCode</a>, <a href="../file-___home_runner_work_aws-lambda-dart-runtime_aws-lambda-dart-runtime_lib_events_alb_event/AwsALBResponse/headers.html">headers</a> and a <a href="../file-___home_runner_work_aws-lambda-dart-runtime_aws-lambda-dart-runtime_lib_events_alb_event/AwsALBResponse/body.html">body</a>.
+They should reflect the informationen needed here.
+</dd>
+
+          <dt id="AwsAlexaEvent">
+  <span class="name "><a href="../file-___home_runner_work_aws-lambda-dart-runtime_aws-lambda-dart-runtime_lib_events_alexa_event/AwsAlexaEvent-class.html">AwsAlexaEvent</a></span> 
+
+</dt>
+<dd>
+  Event send by an Application Load Balancer to the
+invocation to the Lambda.
+</dd>
+
+          <dt id="AwsAlexaEventHeader">
+  <span class="name "><a href="../file-___home_runner_work_aws-lambda-dart-runtime_aws-lambda-dart-runtime_lib_events_alexa_event/AwsAlexaEventHeader-class.html">AwsAlexaEventHeader</a></span> 
+
+</dt>
+<dd>
+  Header are meta information about the event.
+</dd>
+
+          <dt id="AwsApiGatewayEvent">
+  <span class="name "><a href="../file-___home_runner_work_aws-lambda-dart-runtime_aws-lambda-dart-runtime_lib_events_apigateway_event/AwsApiGatewayEvent-class.html">AwsApiGatewayEvent</a></span> 
+
+</dt>
+<dd>
+  API Gateway Event ...
+</dd>
+
+          <dt id="AwsApiGatewayEventHeaders">
+  <span class="name "><a href="../file-___home_runner_work_aws-lambda-dart-runtime_aws-lambda-dart-runtime_lib_events_apigateway_event/AwsApiGatewayEventHeaders-class.html">AwsApiGatewayEventHeaders</a></span> 
+
+</dt>
+<dd>
+  API Gateway Event Headers ...
+</dd>
+
+          <dt id="AwsApiGatewayEventRequestContext">
+  <span class="name "><a href="../file-___home_runner_work_aws-lambda-dart-runtime_aws-lambda-dart-runtime_lib_events_apigateway_event/AwsApiGatewayEventRequestContext-class.html">AwsApiGatewayEventRequestContext</a></span> 
+
+</dt>
+<dd>
+  API Gateway Event Request Context ...
+</dd>
+
+          <dt id="AwsApiGatewayEventRequestContextIdentity">
+  <span class="name "><a href="../file-___home_runner_work_aws-lambda-dart-runtime_aws-lambda-dart-runtime_lib_events_apigateway_event/AwsApiGatewayEventRequestContextIdentity-class.html">AwsApiGatewayEventRequestContextIdentity</a></span> 
+
+</dt>
+<dd>
+  API Gateway Event Identity
+</dd>
+
+          <dt id="AwsApiGatewayResponse">
+  <span class="name "><a href="../file-___home_runner_work_aws-lambda-dart-runtime_aws-lambda-dart-runtime_lib_events_apigateway_event/AwsApiGatewayResponse-class.html">AwsApiGatewayResponse</a></span> 
+
+</dt>
+<dd>
+  API Gateway Response contains the data for a response
+to the API Gateway. It contains the <a href="../file-___home_runner_work_aws-lambda-dart-runtime_aws-lambda-dart-runtime_lib_events_apigateway_event/AwsApiGatewayResponse/body.html">body</a> of the HTTP response.
+It also contains a HTTP Status Code which by default is <code>200</code>.
+Furthermore it indicates if the <a href="../file-___home_runner_work_aws-lambda-dart-runtime_aws-lambda-dart-runtime_lib_events_apigateway_event/AwsApiGatewayResponse/body.html">body</a> is Base64 encoded or not.
+</dd>
+
+          <dt id="AwsAppSyncEvent">
+  <span class="name "><a href="../file-___home_runner_work_aws-lambda-dart-runtime_aws-lambda-dart-runtime_lib_events_appsync_event/AwsAppSyncEvent-class.html">AwsAppSyncEvent</a></span> 
+
+</dt>
+<dd>
+  App Sync Event ...
+</dd>
+
+          <dt id="AwsClaimOverrideDetails">
+  <span class="name "><a href="../file-___home_runner_work_aws-lambda-dart-runtime_aws-lambda-dart-runtime_lib_events_cognito_event/AwsClaimOverrideDetails-class.html">AwsClaimOverrideDetails</a></span> 
+
+</dt>
+<dd>
+  
+</dd>
+
+          <dt id="AwsCloudFrontOriginRequestEvent">
+  <span class="name "><a href="../file-___home_runner_work_aws-lambda-dart-runtime_aws-lambda-dart-runtime_lib_events_cloudfront_origin_request_event/AwsCloudFrontOriginRequestEvent-class.html">AwsCloudFrontOriginRequestEvent</a></span> 
+
+</dt>
+<dd>
+  
+</dd>
+
+          <dt id="AwsCloudFrontViewerRequestEvent">
+  <span class="name "><a href="../file-___home_runner_work_aws-lambda-dart-runtime_aws-lambda-dart-runtime_lib_events_cloudfront_viewer_request_event/AwsCloudFrontViewerRequestEvent-class.html">AwsCloudFrontViewerRequestEvent</a></span> 
+
+</dt>
+<dd>
+  
+</dd>
+
+          <dt id="AwsCloudwatchEvent">
+  <span class="name "><a href="../file-___home_runner_work_aws-lambda-dart-runtime_aws-lambda-dart-runtime_lib_events_cloudwatch_event/AwsCloudwatchEvent-class.html">AwsCloudwatchEvent</a></span> 
+
+</dt>
+<dd>
+  Event that is send via SQS to trigger for an innovation
+of a Lambda.
+</dd>
+
+          <dt id="AwsCloudwatchLogEvent">
+  <span class="name "><a href="../file-___home_runner_work_aws-lambda-dart-runtime_aws-lambda-dart-runtime_lib_events_cloudwatch_log_event/AwsCloudwatchLogEvent-class.html">AwsCloudwatchLogEvent</a></span> 
+
+</dt>
+<dd>
+  Cloudwatch Log Event ...
+</dd>
+
+          <dt id="AwsCognitoEvent">
+  <span class="name "><a href="../file-___home_runner_work_aws-lambda-dart-runtime_aws-lambda-dart-runtime_lib_events_cognito_event/AwsCognitoEvent-class.html">AwsCognitoEvent</a></span> 
+
+</dt>
+<dd>
+  
+</dd>
+
+          <dt id="AwsCognitoRequest">
+  <span class="name "><a href="../file-___home_runner_work_aws-lambda-dart-runtime_aws-lambda-dart-runtime_lib_events_cognito_event/AwsCognitoRequest-class.html">AwsCognitoRequest</a></span> 
+
+</dt>
+<dd>
+  
+</dd>
+
+          <dt id="AwsCognitoResponse">
+  <span class="name "><a href="../file-___home_runner_work_aws-lambda-dart-runtime_aws-lambda-dart-runtime_lib_events_cognito_event/AwsCognitoResponse-class.html">AwsCognitoResponse</a></span> 
+
+</dt>
+<dd>
+  
+</dd>
+
+          <dt id="AwsDynamoDBUpdateEvent">
+  <span class="name "><a href="../file-___home_runner_work_aws-lambda-dart-runtime_aws-lambda-dart-runtime_lib_events_dynamodb_event/AwsDynamoDBUpdateEvent-class.html">AwsDynamoDBUpdateEvent</a></span> 
+
+</dt>
+<dd>
+  DynamoDB Update Event ...
+</dd>
+
+          <dt id="AwsDynamoDBUpdateEventRecord">
+  <span class="name "><a href="../file-___home_runner_work_aws-lambda-dart-runtime_aws-lambda-dart-runtime_lib_events_dynamodb_event/AwsDynamoDBUpdateEventRecord-class.html">AwsDynamoDBUpdateEventRecord</a></span> 
+
+</dt>
+<dd>
+  DynamoDB Update Event Record ...
+</dd>
+
+          <dt id="AwsDynamoDBUpdateRecord">
+  <span class="name "><a href="../file-___home_runner_work_aws-lambda-dart-runtime_aws-lambda-dart-runtime_lib_events_dynamodb_event/AwsDynamoDBUpdateRecord-class.html">AwsDynamoDBUpdateRecord</a></span> 
+
+</dt>
+<dd>
+  Event send by a DynamoDB stream that contains
+the updated records in the DynamoDB table.
+</dd>
+
+          <dt id="AwsGroupConfiguration">
+  <span class="name "><a href="../file-___home_runner_work_aws-lambda-dart-runtime_aws-lambda-dart-runtime_lib_events_cognito_event/AwsGroupConfiguration-class.html">AwsGroupConfiguration</a></span> 
+
+</dt>
+<dd>
+  
+</dd>
+
+          <dt id="AwsKinesisDataStream">
+  <span class="name "><a href="../file-___home_runner_work_aws-lambda-dart-runtime_aws-lambda-dart-runtime_lib_events_kinesis_data_stream_event/AwsKinesisDataStream-class.html">AwsKinesisDataStream</a></span> 
+
+</dt>
+<dd>
+  Kinesis .....
+</dd>
+
+          <dt id="AwsKinesisDataStreamEvent">
+  <span class="name "><a href="../file-___home_runner_work_aws-lambda-dart-runtime_aws-lambda-dart-runtime_lib_events_kinesis_data_stream_event/AwsKinesisDataStreamEvent-class.html">AwsKinesisDataStreamEvent</a></span> 
+
+</dt>
+<dd>
+  Kinesis Event ...
+</dd>
+
+          <dt id="AwsKinesisDataStreamRecord">
+  <span class="name "><a href="../file-___home_runner_work_aws-lambda-dart-runtime_aws-lambda-dart-runtime_lib_events_kinesis_data_stream_event/AwsKinesisDataStreamRecord-class.html">AwsKinesisDataStreamRecord</a></span> 
+
+</dt>
+<dd>
+  Kinesis record that is send via <code>AwsKinesisEvent</code>.
+</dd>
+
+          <dt id="AwsKinesisFirehoseData">
+  <span class="name "><a href="../file-___home_runner_work_aws-lambda-dart-runtime_aws-lambda-dart-runtime_lib_events_kinesis_data_firehose_event/AwsKinesisFirehoseData-class.html">AwsKinesisFirehoseData</a></span> 
+
+</dt>
+<dd>
+  Kinesis .....
+</dd>
+
+          <dt id="AwsKinesisFirehoseDataEvent">
+  <span class="name "><a href="../file-___home_runner_work_aws-lambda-dart-runtime_aws-lambda-dart-runtime_lib_events_kinesis_data_firehose_event/AwsKinesisFirehoseDataEvent-class.html">AwsKinesisFirehoseDataEvent</a></span> 
+
+</dt>
+<dd>
+  Kinesis Event ...
+</dd>
+
+          <dt id="AwsS3Bucket">
+  <span class="name "><a href="../file-___home_runner_work_aws-lambda-dart-runtime_aws-lambda-dart-runtime_lib_events_s3_event/AwsS3Bucket-class.html">AwsS3Bucket</a></span> 
+
+</dt>
+<dd>
+  
+</dd>
+
+          <dt id="AwsS3Data">
+  <span class="name "><a href="../file-___home_runner_work_aws-lambda-dart-runtime_aws-lambda-dart-runtime_lib_events_s3_event/AwsS3Data-class.html">AwsS3Data</a></span> 
+
+</dt>
+<dd>
+  
+</dd>
+
+          <dt id="AwsS3Event">
+  <span class="name "><a href="../file-___home_runner_work_aws-lambda-dart-runtime_aws-lambda-dart-runtime_lib_events_s3_event/AwsS3Event-class.html">AwsS3Event</a></span> 
+
+</dt>
+<dd>
+  Representing a recorded S3 Event send to the Lambda.
+This can be send in batches of operations.
+</dd>
+
+          <dt id="AWSS3EventObject">
+  <span class="name "><a href="../file-___home_runner_work_aws-lambda-dart-runtime_aws-lambda-dart-runtime_lib_events_s3_event/AWSS3EventObject-class.html">AWSS3EventObject</a></span> 
+
+</dt>
+<dd>
+  
+</dd>
+
+          <dt id="AwsS3EventRecord">
+  <span class="name "><a href="../file-___home_runner_work_aws-lambda-dart-runtime_aws-lambda-dart-runtime_lib_events_s3_event/AwsS3EventRecord-class.html">AwsS3EventRecord</a></span> 
+
+</dt>
+<dd>
+  Notifcation Event for Lambda in S3.
+</dd>
+
+          <dt id="AwsS3UserIdentity">
+  <span class="name "><a href="../file-___home_runner_work_aws-lambda-dart-runtime_aws-lambda-dart-runtime_lib_events_s3_event/AwsS3UserIdentity-class.html">AwsS3UserIdentity</a></span> 
+
+</dt>
+<dd>
+  
+</dd>
+
+          <dt id="AwsSQSEvent">
+  <span class="name "><a href="../file-___home_runner_work_aws-lambda-dart-runtime_aws-lambda-dart-runtime_lib_events_sqs_event/AwsSQSEvent-class.html">AwsSQSEvent</a></span> 
+
+</dt>
+<dd>
+  Event that is send via SQS to trigger for an innovation
+of a Lambda.
+</dd>
+
+          <dt id="AwsSQSEventRecord">
+  <span class="name "><a href="../file-___home_runner_work_aws-lambda-dart-runtime_aws-lambda-dart-runtime_lib_events_sqs_event/AwsSQSEventRecord-class.html">AwsSQSEventRecord</a></span> 
+
+</dt>
+<dd>
+  SQS Event Record that is send via <a href="../file-___home_runner_work_aws-lambda-dart-runtime_aws-lambda-dart-runtime_lib_events_sqs_event/AwsSQSEvent-class.html">AwsSQSEvent</a>.
+</dd>
+
+          <dt id="Client">
+  <span class="name "><a href="../file-___home_runner_work_aws-lambda-dart-runtime_aws-lambda-dart-runtime_lib_client_client/Client-class.html">Client</a></span> 
+
+</dt>
+<dd>
+  Client is the Lambda Runtime Interface client.
+It is implemented as a singleton whereby <code>Client.instance</code>
+always returns the already instantiated client.
+</dd>
+
+          <dt id="CloudFrontConfig">
+  <span class="name "><a href="../file-___home_runner_work_aws-lambda-dart-runtime_aws-lambda-dart-runtime_lib_events_cloudfront_viewer_request_event/CloudFrontConfig-class.html">CloudFrontConfig</a></span> 
+
+</dt>
+<dd>
+  
+</dd>
+
+          <dt id="CloudFrontCustomOrigin">
+  <span class="name "><a href="../file-___home_runner_work_aws-lambda-dart-runtime_aws-lambda-dart-runtime_lib_events_cloudfront_origin_request_event/CloudFrontCustomOrigin-class.html">CloudFrontCustomOrigin</a></span> 
+
+</dt>
+<dd>
+  
+</dd>
+
+          <dt id="CloudFrontDistributionConfig">
+  <span class="name "><a href="../file-___home_runner_work_aws-lambda-dart-runtime_aws-lambda-dart-runtime_lib_events_cloudfront_viewer_request_event/CloudFrontDistributionConfig-class.html">CloudFrontDistributionConfig</a></span> 
+
+</dt>
+<dd>
+  
+</dd>
+
+          <dt id="CloudFrontHeader">
+  <span class="name "><a href="../file-___home_runner_work_aws-lambda-dart-runtime_aws-lambda-dart-runtime_lib_events_cloudfront_viewer_request_event/CloudFrontHeader-class.html">CloudFrontHeader</a></span> 
+
+</dt>
+<dd>
+  
+</dd>
+
+          <dt id="CloudFrontOrigin">
+  <span class="name "><a href="../file-___home_runner_work_aws-lambda-dart-runtime_aws-lambda-dart-runtime_lib_events_cloudfront_origin_request_event/CloudFrontOrigin-class.html">CloudFrontOrigin</a></span> 
+
+</dt>
+<dd>
+  
+</dd>
+
+          <dt id="CloudFrontOriginRequest">
+  <span class="name "><a href="../file-___home_runner_work_aws-lambda-dart-runtime_aws-lambda-dart-runtime_lib_events_cloudfront_origin_request_event/CloudFrontOriginRequest-class.html">CloudFrontOriginRequest</a></span> 
+
+</dt>
+<dd>
+  
+</dd>
+
+          <dt id="CloudFrontOriginRequestConfig">
+  <span class="name "><a href="../file-___home_runner_work_aws-lambda-dart-runtime_aws-lambda-dart-runtime_lib_events_cloudfront_origin_request_event/CloudFrontOriginRequestConfig-class.html">CloudFrontOriginRequestConfig</a></span> 
+
+</dt>
+<dd>
+  
+</dd>
+
+          <dt id="CloudFrontOriginRequestDistributionConfig">
+  <span class="name "><a href="../file-___home_runner_work_aws-lambda-dart-runtime_aws-lambda-dart-runtime_lib_events_cloudfront_origin_request_event/CloudFrontOriginRequestDistributionConfig-class.html">CloudFrontOriginRequestDistributionConfig</a></span> 
+
+</dt>
+<dd>
+  
+</dd>
+
+          <dt id="CloudFrontOriginRequestEventRecord">
+  <span class="name "><a href="../file-___home_runner_work_aws-lambda-dart-runtime_aws-lambda-dart-runtime_lib_events_cloudfront_origin_request_event/CloudFrontOriginRequestEventRecord-class.html">CloudFrontOriginRequestEventRecord</a></span> 
+
+</dt>
+<dd>
+  
+</dd>
+
+          <dt id="CloudFrontOriginRquestHeader">
+  <span class="name "><a href="../file-___home_runner_work_aws-lambda-dart-runtime_aws-lambda-dart-runtime_lib_events_cloudfront_origin_request_event/CloudFrontOriginRquestHeader-class.html">CloudFrontOriginRquestHeader</a></span> 
+
+</dt>
+<dd>
+  
+</dd>
+
+          <dt id="CloudFrontRequest">
+  <span class="name "><a href="../file-___home_runner_work_aws-lambda-dart-runtime_aws-lambda-dart-runtime_lib_events_cloudfront_viewer_request_event/CloudFrontRequest-class.html">CloudFrontRequest</a></span> 
+
+</dt>
+<dd>
+  
+</dd>
+
+          <dt id="CloudFrontViewerRequestEventRecord">
+  <span class="name "><a href="../file-___home_runner_work_aws-lambda-dart-runtime_aws-lambda-dart-runtime_lib_events_cloudfront_viewer_request_event/CloudFrontViewerRequestEventRecord-class.html">CloudFrontViewerRequestEventRecord</a></span> 
+
+</dt>
+<dd>
+  
+</dd>
+
+          <dt id="Event">
+  <span class="name "><a href="../file-___home_runner_work_aws-lambda-dart-runtime_aws-lambda-dart-runtime_lib_runtime_event/Event-class.html">Event</a></span> 
+
+</dt>
+<dd>
+  Event is the abstraction for every event that
+can be ingested by a handler.
+</dd>
+
+          <dt id="InvocationError">
+  <span class="name "><a href="../file-___home_runner_work_aws-lambda-dart-runtime_aws-lambda-dart-runtime_lib_client_client/InvocationError-class.html">InvocationError</a></span> 
+
+</dt>
+<dd>
+  Invocation error occurs when there has been an
+error in the invocation of a handlers. It dynamically
+wraps the inner <a href="../file-___home_runner_work_aws-lambda-dart-runtime_aws-lambda-dart-runtime_lib_client_client/InvocationError/error.html">error</a> and attaches the <code>requestId</code> to
+track it along the event.
+</dd>
+
+          <dt id="InvocationResult">
+  <span class="name "><a href="../file-___home_runner_work_aws-lambda-dart-runtime_aws-lambda-dart-runtime_lib_client_client/InvocationResult-class.html">InvocationResult</a></span> 
+
+</dt>
+<dd>
+  Invocation result is the result that the invoked handler
+returns and is posted to the Lambda Runtime Interface.
+</dd>
+
+          <dt id="NextInvocation">
+  <span class="name "><a href="../file-___home_runner_work_aws-lambda-dart-runtime_aws-lambda-dart-runtime_lib_client_client/NextInvocation-class.html">NextInvocation</a></span> 
+
+</dt>
+<dd>
+  Next invocation data wraps the data from the
+invocation endpoint of the Lambda Runtime Interface.
+</dd>
+
+          <dt id="Runtime">
+  <span class="name "><a href="../file-___home_runner_work_aws-lambda-dart-runtime_aws-lambda-dart-runtime_lib_runtime_runtime/Runtime-class.html">Runtime</a></span> 
+
+</dt>
+<dd>
+  A Runtime manages the interface to the Lambda API.
+</dd>
+
+      </dl>
+    </section>
+
+
+
+
+
+
+
+
+    <section class="summary offset-anchor" id="typedefs">
+      <h2>Typedefs</h2>
+      <dl>
+          
+  <dt id="Handler" class="callable">
+    <span class="name"><a href="../file-___home_runner_work_aws-lambda-dart-runtime_aws-lambda-dart-runtime_lib_runtime_runtime/Handler.html">Handler</a></span>&lt;<wbr><span class="type-parameter">E</span>&gt;<span class="signature">
+      <span class="returntype parameter">= <a href="https://api.dart.dev/stable/3.5.4/dart-core/Future-class.html">Future</a> Function<span class="signature">(<span class="parameter" id="param-context"><span class="type-annotation">dynamic</span> <span class="parameter-name">context</span>, </span><span class="parameter" id="param-event"><span class="type-annotation">E</span> <span class="parameter-name">event</span></span>)</span></span>
+    </span>
+    
+
+  </dt>
+  <dd>
+    A function which ingests and Event and a <a href="../file-___home_runner_work_aws-lambda-dart-runtime_aws-lambda-dart-runtime_lib_runtime_context/Context-class.html">Context</a>
+and returns a <a href="../file-___home_runner_work_aws-lambda-dart-runtime_aws-lambda-dart-runtime_lib_client_client/InvocationResult-class.html">InvocationResult</a>. The result is ecoded
+by the <a href="../file-___home_runner_work_aws-lambda-dart-runtime_aws-lambda-dart-runtime_lib_runtime_runtime/Runtime-class.html">Runtime</a> and posted to the Lambda API.
+    
+
+  </dd>
+
+      </dl>
+    </section>
+
+    <section class="summary offset-anchor" id="exceptions">
+      <h2>Exceptions / Errors</h2>
+      <dl>
+          <dt id="RuntimeException">
+  <span class="name "><a href="../file-___home_runner_work_aws-lambda-dart-runtime_aws-lambda-dart-runtime_lib_runtime_exception/RuntimeException-class.html">RuntimeException</a></span> 
+
+</dt>
+<dd>
+  An exception thrown when there is an error in the runtime.
+</dd>
+
+      </dl>
+    </section>
+  </div> <!-- /.main-content -->
+  <div id="dartdoc-sidebar-left" class="sidebar sidebar-offcanvas-left">
+    <!-- The search input and breadcrumbs below are only responsively visible at low resolutions. -->
+<header id="header-search-sidebar" class="hidden-l">
+  <form class="search-sidebar" role="search">
+    <input type="text" id="search-sidebar" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+</header>
+<ol class="breadcrumbs gt-separated dark hidden-l" id="sidebar-nav">
+    <li><a href="../index.html">aws_lambda_runtime</a></li>
+    <li class="self-crumb">aws_lambda_runtime.dart</li>
+</ol>
+
+    <h5><span class="package-name">aws_lambda_runtime</span> <span class="package-kind">package</span></h5>
+    <ol>
+      <li class="section-title">Libraries</li>
+      <li><a href="../file-___home_runner_work_aws-lambda-dart-runtime_aws-lambda-dart-runtime_lib_aws_lambda_runtime/file-___home_runner_work_aws-lambda-dart-runtime_aws-lambda-dart-runtime_lib_aws_lambda_runtime-library.html">aws_lambda_runtime</a></li>
+      <li><a href="../file-___home_runner_work_aws-lambda-dart-runtime_aws-lambda-dart-runtime_lib_client_client/file-___home_runner_work_aws-lambda-dart-runtime_aws-lambda-dart-runtime_lib_client_client-library.html">client/client</a></li>
+      <li><a href="../file-___home_runner_work_aws-lambda-dart-runtime_aws-lambda-dart-runtime_lib_events_alb_event/file-___home_runner_work_aws-lambda-dart-runtime_aws-lambda-dart-runtime_lib_events_alb_event-library.html">events/alb_event</a></li>
+      <li><a href="../file-___home_runner_work_aws-lambda-dart-runtime_aws-lambda-dart-runtime_lib_events_alexa_event/file-___home_runner_work_aws-lambda-dart-runtime_aws-lambda-dart-runtime_lib_events_alexa_event-library.html">events/alexa_event</a></li>
+      <li><a href="../file-___home_runner_work_aws-lambda-dart-runtime_aws-lambda-dart-runtime_lib_events_apigateway_event/file-___home_runner_work_aws-lambda-dart-runtime_aws-lambda-dart-runtime_lib_events_apigateway_event-library.html">events/apigateway_event</a></li>
+      <li><a href="../file-___home_runner_work_aws-lambda-dart-runtime_aws-lambda-dart-runtime_lib_events_appsync_event/file-___home_runner_work_aws-lambda-dart-runtime_aws-lambda-dart-runtime_lib_events_appsync_event-library.html">events/appsync_event</a></li>
+      <li><a href="../file-___home_runner_work_aws-lambda-dart-runtime_aws-lambda-dart-runtime_lib_events_cloudfront_origin_request_event/file-___home_runner_work_aws-lambda-dart-runtime_aws-lambda-dart-runtime_lib_events_cloudfront_origin_request_event-library.html">events/cloudfront_origin_request_event</a></li>
+      <li><a href="../file-___home_runner_work_aws-lambda-dart-runtime_aws-lambda-dart-runtime_lib_events_cloudfront_viewer_request_event/file-___home_runner_work_aws-lambda-dart-runtime_aws-lambda-dart-runtime_lib_events_cloudfront_viewer_request_event-library.html">events/cloudfront_viewer_request_event</a></li>
+      <li><a href="../file-___home_runner_work_aws-lambda-dart-runtime_aws-lambda-dart-runtime_lib_events_cloudwatch_event/file-___home_runner_work_aws-lambda-dart-runtime_aws-lambda-dart-runtime_lib_events_cloudwatch_event-library.html">events/cloudwatch_event</a></li>
+      <li><a href="../file-___home_runner_work_aws-lambda-dart-runtime_aws-lambda-dart-runtime_lib_events_cloudwatch_log_event/file-___home_runner_work_aws-lambda-dart-runtime_aws-lambda-dart-runtime_lib_events_cloudwatch_log_event-library.html">events/cloudwatch_log_event</a></li>
+      <li><a href="../file-___home_runner_work_aws-lambda-dart-runtime_aws-lambda-dart-runtime_lib_events_cognito_event/file-___home_runner_work_aws-lambda-dart-runtime_aws-lambda-dart-runtime_lib_events_cognito_event-library.html">events/cognito_event</a></li>
+      <li><a href="../file-___home_runner_work_aws-lambda-dart-runtime_aws-lambda-dart-runtime_lib_events_dynamodb_event/file-___home_runner_work_aws-lambda-dart-runtime_aws-lambda-dart-runtime_lib_events_dynamodb_event-library.html">events/dynamodb_event</a></li>
+      <li><a href="../file-___home_runner_work_aws-lambda-dart-runtime_aws-lambda-dart-runtime_lib_events_kinesis_data_firehose_event/file-___home_runner_work_aws-lambda-dart-runtime_aws-lambda-dart-runtime_lib_events_kinesis_data_firehose_event-library.html">events/kinesis_data_firehose_event</a></li>
+      <li><a href="../file-___home_runner_work_aws-lambda-dart-runtime_aws-lambda-dart-runtime_lib_events_kinesis_data_stream_event/file-___home_runner_work_aws-lambda-dart-runtime_aws-lambda-dart-runtime_lib_events_kinesis_data_stream_event-library.html">events/kinesis_data_stream_event</a></li>
+      <li><a href="../file-___home_runner_work_aws-lambda-dart-runtime_aws-lambda-dart-runtime_lib_events_s3_event/file-___home_runner_work_aws-lambda-dart-runtime_aws-lambda-dart-runtime_lib_events_s3_event-library.html">events/s3_event</a></li>
+      <li><a href="../file-___home_runner_work_aws-lambda-dart-runtime_aws-lambda-dart-runtime_lib_events_sqs_event/file-___home_runner_work_aws-lambda-dart-runtime_aws-lambda-dart-runtime_lib_events_sqs_event-library.html">events/sqs_event</a></li>
+      <li><a href="../file-___home_runner_work_aws-lambda-dart-runtime_aws-lambda-dart-runtime_lib_runtime_context/file-___home_runner_work_aws-lambda-dart-runtime_aws-lambda-dart-runtime_lib_runtime_context-library.html">runtime/context</a></li>
+      <li><a href="../file-___home_runner_work_aws-lambda-dart-runtime_aws-lambda-dart-runtime_lib_runtime_environment/file-___home_runner_work_aws-lambda-dart-runtime_aws-lambda-dart-runtime_lib_runtime_environment-library.html">runtime/environment</a></li>
+      <li><a href="../file-___home_runner_work_aws-lambda-dart-runtime_aws-lambda-dart-runtime_lib_runtime_event/file-___home_runner_work_aws-lambda-dart-runtime_aws-lambda-dart-runtime_lib_runtime_event-library.html">runtime/event</a></li>
+      <li><a href="../file-___home_runner_work_aws-lambda-dart-runtime_aws-lambda-dart-runtime_lib_runtime_exception/file-___home_runner_work_aws-lambda-dart-runtime_aws-lambda-dart-runtime_lib_runtime_exception-library.html">runtime/exception</a></li>
+      <li><a href="../file-___home_runner_work_aws-lambda-dart-runtime_aws-lambda-dart-runtime_lib_runtime_runtime/file-___home_runner_work_aws-lambda-dart-runtime_aws-lambda-dart-runtime_lib_runtime_runtime-library.html">runtime/runtime</a></li>
+</ol>
+
+  </div>
+  <div id="dartdoc-sidebar-right" class="sidebar sidebar-offcanvas-right">
+    <h5>aws_lambda_runtime library</h5>
+  </div><!--/sidebar-offcanvas-right-->
+</main>
+<footer>
+  <span class="no-break">
+    aws_lambda_runtime
+      1.1.1
+  </span>
+  
+</footer>
+
+
+<script src="../static-assets/highlight.pack.js?v1"></script>
+<script src="../static-assets/docs.dart.js"></script>
+
+</body>
+</html>
+
