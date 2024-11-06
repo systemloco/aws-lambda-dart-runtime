@@ -111,6 +111,7 @@ There are a number of events that come with the Dart Runtime.
 - Alexa
 - API Gateway
 - AppSync
+- Cloudfront
 - Cloudwatch
 - Cognito
 - DynamoDB
