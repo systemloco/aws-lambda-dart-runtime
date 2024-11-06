@@ -1,6 +1,6 @@
 # Dart Runtime for AWS Lambda
 
-![Main](https://github.com/katallaxie/aws-lambda-dart-runtime/workflows/Main/badge.svg?branch=main)
+![Main](https://github.com/systemloco/aws-lambda-dart-runtime/actions/workflows/main.yml/badge.svg)
 [![License Apache 2](https://img.shields.io/badge/License-Apache2-blue.svg)](https://www.apache.org/licenses/LICENSE-2.0)
 
 <p align="center">
@@ -23,7 +23,7 @@
 - Typed events
 - Custom events
 
-> this package requires Dart `>= 2.6`
+> this package requires Dart `>= 3.0.0`
 > currently `dart2native` only supports building for the platform it is run on, so you must either build on a `Linux` machine or use `docker`
 
 ## 🚀 Introduction
@@ -44,7 +44,7 @@ Add the following snippet to your [pubspec file](https://dart.dev/tools/pub/pubs
 
 ```yaml
 dependencies:
-  aws_lambda_runtime: ^1.1.0
+  aws_lambda_runtime: ^2.0.0 # get the laster version from pub.dev
 ```
 
 [Docs](https://awslabs.github.io/aws-lambda-dart-runtime/) are available. They are also accessible in the [`docs`](https://github.com/awslabs/aws-lambda-dart-runtime/blob/docs) folder.
