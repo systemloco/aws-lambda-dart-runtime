@@ -7,11 +7,10 @@ part of 'cloudwatch_log_event.dart';
 // **************************************************************************
 
 AwsCloudwatchLogEvent _$AwsCloudwatchLogEventFromJson(
-    Map<String, dynamic> json) {
-  return AwsCloudwatchLogEvent(
-    awslogs: json['awslogs'] as Map<String, dynamic>?,
-  );
-}
+        Map<String, dynamic> json) =>
+    AwsCloudwatchLogEvent(
+      awslogs: json['awslogs'] as Map<String, dynamic>?,
+    );
 
 Map<String, dynamic> _$AwsCloudwatchLogEventToJson(
         AwsCloudwatchLogEvent instance) =>

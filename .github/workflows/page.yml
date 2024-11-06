@@ -9,10 +9,8 @@ jobs:
   build:
     runs-on: ubuntu-latest
 
-    container:
-      image: google/dart:latest
-
     steps:
+      - uses: dart-lang/setup-dart@v1
       - uses: actions/checkout@v2
       - name: Generate docs
         run: dartdoc --output doc
