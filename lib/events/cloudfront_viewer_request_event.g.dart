@@ -87,17 +87,17 @@ Map<String, dynamic> _$CloudFrontHeaderToJson(CloudFrontHeader instance) =>
       'value': instance.value,
     };
 
-CloudFrontViewerRequestEvent _$CloudFrontViewerRequestEventFromJson(
+AwsCloudFrontViewerRequestEvent _$AwsCloudFrontViewerRequestEventFromJson(
         Map<String, dynamic> json) =>
-    CloudFrontViewerRequestEvent(
+    AwsCloudFrontViewerRequestEvent(
       records: (json['Records'] as List<dynamic>)
           .map((e) => CloudFrontViewerRequestEventRecord.fromJson(
               e as Map<String, dynamic>))
           .toList(),
     );
 
-Map<String, dynamic> _$CloudFrontViewerRequestEventToJson(
-        CloudFrontViewerRequestEvent instance) =>
+Map<String, dynamic> _$AwsCloudFrontViewerRequestEventToJson(
+        AwsCloudFrontViewerRequestEvent instance) =>
     <String, dynamic>{
       'Records': instance.records,
     };

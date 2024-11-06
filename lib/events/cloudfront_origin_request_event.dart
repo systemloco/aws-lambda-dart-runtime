@@ -1,11 +1,12 @@
+import 'package:aws_lambda_runtime/runtime/event.dart';
 import 'package:json_annotation/json_annotation.dart';
 
 part 'cloudfront_origin_request_event.g.dart';
 
 @JsonSerializable()
-class CloudFrontOriginRequestEventRecord {
+class CloudFrontOriginRequestEventRecord extends Event {
   @JsonKey()
-  final CloudFrontConfig cf;
+  final CloudFrontOriginRequestConfig cf;
 
   CloudFrontOriginRequestEventRecord({
     required this.cf,
@@ -18,25 +19,26 @@ class CloudFrontOriginRequestEventRecord {
 }
 
 @JsonSerializable()
-class CloudFrontConfig {
+class CloudFrontOriginRequestConfig {
   @JsonKey()
-  final CloudFrontDistributionConfig config;
+  final CloudFrontOriginRequestDistributionConfig config;
 
   @JsonKey()
-  final CloudFrontRequest request;
+  final CloudFrontOriginRequest request;
 
-  CloudFrontConfig({
+  CloudFrontOriginRequestConfig({
     required this.config,
     required this.request,
   });
 
-  factory CloudFrontConfig.fromJson(Map<String, dynamic> json) => _$CloudFrontConfigFromJson(json);
+  factory CloudFrontOriginRequestConfig.fromJson(Map<String, dynamic> json) =>
+      _$CloudFrontOriginRequestConfigFromJson(json);
 
-  Map<String, dynamic> toJson() => _$CloudFrontConfigToJson(this);
+  Map<String, dynamic> toJson() => _$CloudFrontOriginRequestConfigToJson(this);
 }
 
 @JsonSerializable()
-class CloudFrontDistributionConfig {
+class CloudFrontOriginRequestDistributionConfig {
   @JsonKey()
   final String distributionDomainName;
 
@@ -49,26 +51,26 @@ class CloudFrontDistributionConfig {
   @JsonKey()
   final String requestId;
 
-  CloudFrontDistributionConfig({
+  CloudFrontOriginRequestDistributionConfig({
     required this.distributionDomainName,
     required this.distributionId,
     required this.eventType,
     required this.requestId,
   });
 
-  factory CloudFrontDistributionConfig.fromJson(Map<String, dynamic> json) =>
-      _$CloudFrontDistributionConfigFromJson(json);
+  factory CloudFrontOriginRequestDistributionConfig.fromJson(Map<String, dynamic> json) =>
+      _$CloudFrontOriginRequestDistributionConfigFromJson(json);
 
-  Map<String, dynamic> toJson() => _$CloudFrontDistributionConfigToJson(this);
+  Map<String, dynamic> toJson() => _$CloudFrontOriginRequestDistributionConfigToJson(this);
 }
 
 @JsonSerializable()
-class CloudFrontRequest {
+class CloudFrontOriginRequest {
   @JsonKey()
   final String clientIp;
 
   @JsonKey()
-  final Map<String, List<CloudFrontHeader>> headers;
+  final Map<String, List<CloudFrontOriginRquestHeader>> headers;
 
   @JsonKey()
   final String method;
@@ -82,7 +84,7 @@ class CloudFrontRequest {
   @JsonKey()
   final CloudFrontOrigin? origin;
 
-  CloudFrontRequest({
+  CloudFrontOriginRequest({
     required this.clientIp,
     required this.headers,
     required this.method,
@@ -91,9 +93,9 @@ class CloudFrontRequest {
     this.origin,
   });
 
-  factory CloudFrontRequest.fromJson(Map<String, dynamic> json) => _$CloudFrontRequestFromJson(json);
+  factory CloudFrontOriginRequest.fromJson(Map<String, dynamic> json) => _$CloudFrontOriginRequestFromJson(json);
 
-  Map<String, dynamic> toJson() => _$CloudFrontRequestToJson(this);
+  Map<String, dynamic> toJson() => _$CloudFrontOriginRequestToJson(this);
 }
 
 @JsonSerializable()
@@ -113,7 +115,7 @@ class CloudFrontOrigin {
 @JsonSerializable()
 class CloudFrontCustomOrigin {
   @JsonKey()
-  final Map<String, List<CloudFrontHeader>> customHeaders;
+  final Map<String, List<CloudFrontOriginRquestHeader>> customHeaders;
 
   @JsonKey()
   final String domainName;
@@ -153,34 +155,35 @@ class CloudFrontCustomOrigin {
 }
 
 @JsonSerializable()
-class CloudFrontHeader {
+class CloudFrontOriginRquestHeader {
   @JsonKey()
   final String key;
 
   @JsonKey()
   final String value;
 
-  CloudFrontHeader({
+  CloudFrontOriginRquestHeader({
     required this.key,
     required this.value,
   });
 
-  factory CloudFrontHeader.fromJson(Map<String, dynamic> json) => _$CloudFrontHeaderFromJson(json);
+  factory CloudFrontOriginRquestHeader.fromJson(Map<String, dynamic> json) =>
+      _$CloudFrontOriginRquestHeaderFromJson(json);
 
-  Map<String, dynamic> toJson() => _$CloudFrontHeaderToJson(this);
+  Map<String, dynamic> toJson() => _$CloudFrontOriginRquestHeaderToJson(this);
 }
 
 @JsonSerializable()
-class CloudFrontOriginRequestEvent {
+class AwsCloudFrontOriginRequestEvent {
   @JsonKey(name: 'Records')
   final List<CloudFrontOriginRequestEventRecord> records;
 
-  CloudFrontOriginRequestEvent({
+  AwsCloudFrontOriginRequestEvent({
     required this.records,
   });
 
-  factory CloudFrontOriginRequestEvent.fromJson(Map<String, dynamic> json) =>
-      _$CloudFrontOriginRequestEventFromJson(json);
+  factory AwsCloudFrontOriginRequestEvent.fromJson(Map<String, dynamic> json) =>
+      _$AwsCloudFrontOriginRequestEventFromJson(json);
 
-  Map<String, dynamic> toJson() => _$CloudFrontOriginRequestEventToJson(this);
+  Map<String, dynamic> toJson() => _$AwsCloudFrontOriginRequestEventToJson(this);
 }

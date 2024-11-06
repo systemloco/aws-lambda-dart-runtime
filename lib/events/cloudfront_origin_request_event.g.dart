@@ -9,7 +9,8 @@ part of 'cloudfront_origin_request_event.dart';
 CloudFrontOriginRequestEventRecord _$CloudFrontOriginRequestEventRecordFromJson(
         Map<String, dynamic> json) =>
     CloudFrontOriginRequestEventRecord(
-      cf: CloudFrontConfig.fromJson(json['cf'] as Map<String, dynamic>),
+      cf: CloudFrontOriginRequestConfig.fromJson(
+          json['cf'] as Map<String, dynamic>),
     );
 
 Map<String, dynamic> _$CloudFrontOriginRequestEventRecordToJson(
@@ -18,31 +19,34 @@ Map<String, dynamic> _$CloudFrontOriginRequestEventRecordToJson(
       'cf': instance.cf,
     };
 
-CloudFrontConfig _$CloudFrontConfigFromJson(Map<String, dynamic> json) =>
-    CloudFrontConfig(
-      config: CloudFrontDistributionConfig.fromJson(
+CloudFrontOriginRequestConfig _$CloudFrontOriginRequestConfigFromJson(
+        Map<String, dynamic> json) =>
+    CloudFrontOriginRequestConfig(
+      config: CloudFrontOriginRequestDistributionConfig.fromJson(
           json['config'] as Map<String, dynamic>),
-      request:
-          CloudFrontRequest.fromJson(json['request'] as Map<String, dynamic>),
+      request: CloudFrontOriginRequest.fromJson(
+          json['request'] as Map<String, dynamic>),
     );
 
-Map<String, dynamic> _$CloudFrontConfigToJson(CloudFrontConfig instance) =>
+Map<String, dynamic> _$CloudFrontOriginRequestConfigToJson(
+        CloudFrontOriginRequestConfig instance) =>
     <String, dynamic>{
       'config': instance.config,
       'request': instance.request,
     };
 
-CloudFrontDistributionConfig _$CloudFrontDistributionConfigFromJson(
-        Map<String, dynamic> json) =>
-    CloudFrontDistributionConfig(
-      distributionDomainName: json['distributionDomainName'] as String,
-      distributionId: json['distributionId'] as String,
-      eventType: json['eventType'] as String,
-      requestId: json['requestId'] as String,
-    );
+CloudFrontOriginRequestDistributionConfig
+    _$CloudFrontOriginRequestDistributionConfigFromJson(
+            Map<String, dynamic> json) =>
+        CloudFrontOriginRequestDistributionConfig(
+          distributionDomainName: json['distributionDomainName'] as String,
+          distributionId: json['distributionId'] as String,
+          eventType: json['eventType'] as String,
+          requestId: json['requestId'] as String,
+        );
 
-Map<String, dynamic> _$CloudFrontDistributionConfigToJson(
-        CloudFrontDistributionConfig instance) =>
+Map<String, dynamic> _$CloudFrontOriginRequestDistributionConfigToJson(
+        CloudFrontOriginRequestDistributionConfig instance) =>
     <String, dynamic>{
       'distributionDomainName': instance.distributionDomainName,
       'distributionId': instance.distributionId,
@@ -50,15 +54,16 @@ Map<String, dynamic> _$CloudFrontDistributionConfigToJson(
       'requestId': instance.requestId,
     };
 
-CloudFrontRequest _$CloudFrontRequestFromJson(Map<String, dynamic> json) =>
-    CloudFrontRequest(
+CloudFrontOriginRequest _$CloudFrontOriginRequestFromJson(
+        Map<String, dynamic> json) =>
+    CloudFrontOriginRequest(
       clientIp: json['clientIp'] as String,
       headers: (json['headers'] as Map<String, dynamic>).map(
         (k, e) => MapEntry(
             k,
             (e as List<dynamic>)
-                .map(
-                    (e) => CloudFrontHeader.fromJson(e as Map<String, dynamic>))
+                .map((e) => CloudFrontOriginRquestHeader.fromJson(
+                    e as Map<String, dynamic>))
                 .toList()),
       ),
       method: json['method'] as String,
@@ -69,7 +74,8 @@ CloudFrontRequest _$CloudFrontRequestFromJson(Map<String, dynamic> json) =>
           : CloudFrontOrigin.fromJson(json['origin'] as Map<String, dynamic>),
     );
 
-Map<String, dynamic> _$CloudFrontRequestToJson(CloudFrontRequest instance) =>
+Map<String, dynamic> _$CloudFrontOriginRequestToJson(
+        CloudFrontOriginRequest instance) =>
     <String, dynamic>{
       'clientIp': instance.clientIp,
       'headers': instance.headers,
@@ -97,8 +103,8 @@ CloudFrontCustomOrigin _$CloudFrontCustomOriginFromJson(
         (k, e) => MapEntry(
             k,
             (e as List<dynamic>)
-                .map(
-                    (e) => CloudFrontHeader.fromJson(e as Map<String, dynamic>))
+                .map((e) => CloudFrontOriginRquestHeader.fromJson(
+                    e as Map<String, dynamic>))
                 .toList()),
       ),
       domainName: json['domainName'] as String,
@@ -125,29 +131,31 @@ Map<String, dynamic> _$CloudFrontCustomOriginToJson(
       'sslProtocols': instance.sslProtocols,
     };
 
-CloudFrontHeader _$CloudFrontHeaderFromJson(Map<String, dynamic> json) =>
-    CloudFrontHeader(
+CloudFrontOriginRquestHeader _$CloudFrontOriginRquestHeaderFromJson(
+        Map<String, dynamic> json) =>
+    CloudFrontOriginRquestHeader(
       key: json['key'] as String,
       value: json['value'] as String,
     );
 
-Map<String, dynamic> _$CloudFrontHeaderToJson(CloudFrontHeader instance) =>
+Map<String, dynamic> _$CloudFrontOriginRquestHeaderToJson(
+        CloudFrontOriginRquestHeader instance) =>
     <String, dynamic>{
       'key': instance.key,
       'value': instance.value,
     };
 
-CloudFrontOriginRequestEvent _$CloudFrontOriginRequestEventFromJson(
+AwsCloudFrontOriginRequestEvent _$AwsCloudFrontOriginRequestEventFromJson(
         Map<String, dynamic> json) =>
-    CloudFrontOriginRequestEvent(
+    AwsCloudFrontOriginRequestEvent(
       records: (json['Records'] as List<dynamic>)
           .map((e) => CloudFrontOriginRequestEventRecord.fromJson(
               e as Map<String, dynamic>))
           .toList(),
     );
 
-Map<String, dynamic> _$CloudFrontOriginRequestEventToJson(
-        CloudFrontOriginRequestEvent instance) =>
+Map<String, dynamic> _$AwsCloudFrontOriginRequestEventToJson(
+        AwsCloudFrontOriginRequestEvent instance) =>
     <String, dynamic>{
       'Records': instance.records,
     };

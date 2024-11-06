@@ -111,16 +111,16 @@ class CloudFrontHeader {
 }
 
 @JsonSerializable()
-class CloudFrontViewerRequestEvent {
+class AwsCloudFrontViewerRequestEvent {
   @JsonKey(name: 'Records')
   final List<CloudFrontViewerRequestEventRecord> records;
 
-  CloudFrontViewerRequestEvent({
+  AwsCloudFrontViewerRequestEvent({
     required this.records,
   });
 
-  factory CloudFrontViewerRequestEvent.fromJson(Map<String, dynamic> json) =>
-      _$CloudFrontViewerRequestEventFromJson(json);
+  factory AwsCloudFrontViewerRequestEvent.fromJson(Map<String, dynamic> json) =>
+      _$AwsCloudFrontViewerRequestEventFromJson(json);
 
-  Map<String, dynamic> toJson() => _$CloudFrontViewerRequestEventToJson(this);
+  Map<String, dynamic> toJson() => _$AwsCloudFrontViewerRequestEventToJson(this);
 }
