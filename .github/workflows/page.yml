@@ -21,10 +21,13 @@ jobs:
         run: dartdoc --output doc
 
       - name: Create .nojekyll file
-        run: touch doc/.nojekyll
+        run: |
+          touch doc/.nojekyll
+          touch .nojekyll
 
       - name: Publish GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./doc
+          enable_jekyll: false
