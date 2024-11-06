@@ -6,19 +6,20 @@ part of 'cloudwatch_event.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-AwsCloudwatchEvent _$AwsCloudwatchEventFromJson(Map<String, dynamic> json) {
-  return AwsCloudwatchEvent(
-    resources:
-        (json['resources'] as List<dynamic>?)?.map((e) => e as String).toList(),
-    region: json['region'] as String?,
-    id: json['id'] as String?,
-    source: json['source'] as String?,
-    account: json['account'] as String?,
-    detailType: json['detail-type'] as String?,
-    detail: json['detail'] as Map<String, dynamic>?,
-    time: json['time'] == null ? null : DateTime.parse(json['time'] as String),
-  );
-}
+AwsCloudwatchEvent _$AwsCloudwatchEventFromJson(Map<String, dynamic> json) =>
+    AwsCloudwatchEvent(
+      resources: (json['resources'] as List<dynamic>?)
+          ?.map((e) => e as String)
+          .toList(),
+      region: json['region'] as String?,
+      id: json['id'] as String?,
+      source: json['source'] as String?,
+      account: json['account'] as String?,
+      detailType: json['detail-type'] as String?,
+      detail: json['detail'] as Map<String, dynamic>?,
+      time:
+          json['time'] == null ? null : DateTime.parse(json['time'] as String),
+    );
 
 Map<String, dynamic> _$AwsCloudwatchEventToJson(AwsCloudwatchEvent instance) =>
     <String, dynamic>{

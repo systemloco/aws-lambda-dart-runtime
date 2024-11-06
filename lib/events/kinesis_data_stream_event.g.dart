@@ -6,15 +6,16 @@ part of 'kinesis_data_stream_event.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-AwsKinesisDataStream _$AwsKinesisDataStreamFromJson(Map<String, dynamic> json) {
-  return AwsKinesisDataStream(
-    partitionKey: json['partitionKey'] as String?,
-    kinesisSchemaVersion: json['kinesisSchemaVersion'] as String?,
-    data: json['data'] as String?,
-    sequenceNumber: json['sequenceNumber'] as String?,
-    approximateArrivalTimestamp: json['approximateArrivalTimestamp'] as int?,
-  );
-}
+AwsKinesisDataStream _$AwsKinesisDataStreamFromJson(
+        Map<String, dynamic> json) =>
+    AwsKinesisDataStream(
+      partitionKey: json['partitionKey'] as String?,
+      kinesisSchemaVersion: json['kinesisSchemaVersion'] as String?,
+      data: json['data'] as String?,
+      sequenceNumber: json['sequenceNumber'] as String?,
+      approximateArrivalTimestamp:
+          (json['approximateArrivalTimestamp'] as num?)?.toInt(),
+    );
 
 Map<String, dynamic> _$AwsKinesisDataStreamToJson(
         AwsKinesisDataStream instance) =>
@@ -27,21 +28,20 @@ Map<String, dynamic> _$AwsKinesisDataStreamToJson(
     };
 
 AwsKinesisDataStreamRecord _$AwsKinesisDataStreamRecordFromJson(
-    Map<String, dynamic> json) {
-  return AwsKinesisDataStreamRecord(
-    kinesis: json['kinesis'] == null
-        ? null
-        : AwsKinesisDataStream.fromJson(
-            json['kinesis'] as Map<String, dynamic>),
-    invokeIdentityArn: json['invokeIdentityArn'] as String?,
-    eventName: json['eventName'] as String?,
-    eventID: json['eventID'] as String?,
-    eventSource: json['eventSource'] as String?,
-    eventVersion: json['eventVersion'] as String?,
-    eventSourceARN: json['eventSourceARN'] as String?,
-    awsRegion: json['awsRegion'] as String?,
-  );
-}
+        Map<String, dynamic> json) =>
+    AwsKinesisDataStreamRecord(
+      kinesis: json['kinesis'] == null
+          ? null
+          : AwsKinesisDataStream.fromJson(
+              json['kinesis'] as Map<String, dynamic>),
+      invokeIdentityArn: json['invokeIdentityArn'] as String?,
+      eventName: json['eventName'] as String?,
+      eventID: json['eventID'] as String?,
+      eventSource: json['eventSource'] as String?,
+      eventVersion: json['eventVersion'] as String?,
+      eventSourceARN: json['eventSourceARN'] as String?,
+      awsRegion: json['awsRegion'] as String?,
+    );
 
 Map<String, dynamic> _$AwsKinesisDataStreamRecordToJson(
         AwsKinesisDataStreamRecord instance) =>
@@ -57,14 +57,13 @@ Map<String, dynamic> _$AwsKinesisDataStreamRecordToJson(
     };
 
 AwsKinesisDataStreamEvent _$AwsKinesisDataStreamEventFromJson(
-    Map<String, dynamic> json) {
-  return AwsKinesisDataStreamEvent(
-    records: (json['Records'] as List<dynamic>?)
-        ?.map((e) =>
-            AwsKinesisDataStreamRecord.fromJson(e as Map<String, dynamic>))
-        .toList(),
-  );
-}
+        Map<String, dynamic> json) =>
+    AwsKinesisDataStreamEvent(
+      records: (json['Records'] as List<dynamic>?)
+          ?.map((e) =>
+              AwsKinesisDataStreamRecord.fromJson(e as Map<String, dynamic>))
+          .toList(),
+    );
 
 Map<String, dynamic> _$AwsKinesisDataStreamEventToJson(
         AwsKinesisDataStreamEvent instance) =>

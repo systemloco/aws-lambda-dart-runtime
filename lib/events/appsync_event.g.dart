@@ -6,13 +6,12 @@ part of 'appsync_event.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-AwsAppSyncEvent _$AwsAppSyncEventFromJson(Map<String, dynamic> json) {
-  return AwsAppSyncEvent(
-    version: json['version'] as String?,
-    operation: json['operation'] as String?,
-    payload: json['payload'] as String?,
-  );
-}
+AwsAppSyncEvent _$AwsAppSyncEventFromJson(Map<String, dynamic> json) =>
+    AwsAppSyncEvent(
+      version: json['version'] as String?,
+      operation: json['operation'] as String?,
+      payload: json['payload'] as String?,
+    );
 
 Map<String, dynamic> _$AwsAppSyncEventToJson(AwsAppSyncEvent instance) =>
     <String, dynamic>{
