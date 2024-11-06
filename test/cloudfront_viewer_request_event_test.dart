@@ -49,7 +49,7 @@ void main() {
     ''';
 
     final jsonData = json.decode(jsonString) as Map<String, dynamic>;
-    final event = CloudFrontViewerRequestEvent.fromJson(jsonData);
+    final event = AwsCloudFrontViewerRequestEvent.fromJson(jsonData);
 
     expect(event.records.length, 1);
     final record = event.records.first;

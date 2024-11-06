@@ -18,6 +18,8 @@ abstract class Event {
     AwsCloudwatchEvent: (Map<String, dynamic>? json) => AwsCloudwatchEvent.fromJson(json!),
     AwsCloudwatchLogEvent: (Map<String, dynamic>? json) => AwsCloudwatchLogEvent.fromJson(json!),
     AwsDynamoDBUpdateEvent: (Map<String, dynamic>? json) => AwsDynamoDBUpdateEvent.fromJson(json!),
+    AwsCloudFrontViewerRequestEvent: (Map<String, dynamic>? json) => AwsCloudFrontViewerRequestEvent.fromJson(json!),
+    AwsCloudFrontOriginRequestEvent: (Map<String, dynamic>? json) => AwsCloudFrontOriginRequestEvent.fromJson(json!),
     AwsKinesisDataStreamEvent: (Map<String, dynamic>? json) => AwsKinesisDataStreamEvent.fromJson(json!)
   };
 

@@ -3,6 +3,8 @@ export 'events/alb_event.dart';
 export 'events/alexa_event.dart';
 export 'events/apigateway_event.dart';
 export 'events/appsync_event.dart';
+export 'events/cloudfront_origin_request_event.dart';
+export 'events/cloudfront_viewer_request_event.dart';
 export 'events/cloudwatch_event.dart';
 export 'events/cloudwatch_log_event.dart';
 export 'events/cognito_event.dart';

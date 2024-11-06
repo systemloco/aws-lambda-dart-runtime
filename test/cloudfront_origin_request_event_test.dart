@@ -77,7 +77,7 @@ void main() {
     ''';
 
     final jsonData = json.decode(jsonString) as Map<String, dynamic>;
-    final event = CloudFrontOriginRequestEvent.fromJson(jsonData);
+    final event = AwsCloudFrontOriginRequestEvent.fromJson(jsonData);
 
     expect(event.records.length, 1);
     final record = event.records.first;
